@@ -1,0 +1,87 @@
+@charset "UTF-8";
+body {
+  font-size: 14px;
+  font-family: 游ゴシック, Meiryo, sans-serif;
+  overflow-x: hidden;
+  line-height: 1.42857143;
+  color: #333;
+  background-color: #fff;
+  margin: 0;
+}
+
+.lp_body {
+  font-family: "小塚ゴシック Pro", 游ゴシック, Meiryo, sans-serif;
+  line-height: 1.8;
+}
+
+.mainttl {
+  background: url(../img/w_code/head_bg.jpg) no-repeat center center;
+  background-size: cover;
+}
+
+.outer {
+  max-width: 1100px;
+  width: 94%;
+  margin: 0 auto;
+}
+
+.inner {
+  font-size: calc(22*(100vw/750));
+  padding: 2em 0.2em;
+  border: 5px solid #000;
+  border-radius: 20px;
+  background: #fff;
+  width: 100%;
+  max-width: 700px;
+  text-align: center;
+  color: #131d34;
+  margin: 0 auto 2em;
+}
+
+.fadeInUp {
+  -webkit-animation-name: fadeInUp;
+  animation-name: fadeInUp;
+}
+
+.title1 {
+  font-size: 38px;
+  font-weight: bold;
+  line-height: 1;
+  margin: 0;
+}
+
+.title2 {
+  margin: 0 0 1em;
+}
+
+.line1 {
+  font-size: calc(34*(100vw/750));
+}
+
+.line2 {
+  font-size: calc(36*(100vw/750));
+  font-weight: bold;
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(60%, transparent), color-stop(60%, #f9ff10));
+  background: linear-gradient(transparent 60%, #f9ff10 60%);
+  display: inline-block;
+}
+
+.link1 {
+  background: #009bcf;
+  display: block;
+  color: #fff;
+  padding: 1em 1em;
+  max-width: 560px;
+  width: 94%;
+  margin: 1em auto 0;
+  border-radius: 4px;
+  text-decoration: none;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.line3 {
+  text-align: center;
+  font-size: 0.6em;
+}
+/*# sourceMappingURL=main.css.map */
