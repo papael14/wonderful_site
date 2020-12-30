@@ -2,20 +2,135 @@ body {
   font-size: 14px;
   font-family: 游ゴシック, Meiryo, sans-serif;
   overflow-x: hidden;
-  // ord-wrap: break-word;
   line-height: 1.42857143;
   color: #333;
   background-color: #fff;
   margin: 0;
 }
 
+@media screen and (min-width: 1200px){
+  .navbar-toggle {display: none;}
+  .navbar-toggle .icon-bar {display: none;}
+}
+
+@media screen and (max-width: 1199px){
+  .navbar-toggle {display: block;}
+  .navbar-toggle .icon-bar {display: block}
+  .gnav__menu__item {display: none}
+  .gnav__menu__item_end {display: none}
+}
+
+@media (min-width: 960px){
+  .title1{
+    font-size: 38px;
+  }
+
+  .line1{
+    font-size: 34px;
+  }
+
+  .line2{
+    font-size: 36px;
+  }
+  .subttl{
+    justify-content: space-evenly;
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 959px){
+  .lp_body {
+    font-size: calc(32*(100vw/750));
+  }
+  .title1{
+    font-size: calc(38*(100vw/750));
+  }
+  .title2{
+    font-size: calc(16*(100vw/750));
+  }
+  .inner{
+  font-size: calc(22*(100vw/750));
+  padding: 2em 0.2em;
+  }
+  .line1{
+    font-size: calc(34*(100vw/750));
+  }
+
+  .line2{
+    font-size: calc(36*(100vw/750));
+  }
+  .subttl{
+    flex-direction: column;
+    align-content: center;
+    font-size: 24px;
+  }
+}
+
+
+.navbar-toggle {
+  display: flex;
+  flex-direction: column;
+  border-color: #ddd;
+  width: 42px;
+
+  position: relative;
+  float: right;
+  margin-right: 15px;
+  padding: 9px 10px;
+  margin-top: 8px;
+  margin-bottom: 8px;
+  background-color: transparent;
+  background-image: none;
+  border: 1px solid transparent;
+  border-radius: 4px;
+}
+
+.navbar-toggle .icon-bar {
+  width: 22px;
+  height: 2px;
+  margin: 2px 0px;
+  border-radius: 1px;
+  background-color: #888;
+}
+
+.gnav{
+  position: fixed;
+  left: 0px;
+  top: 0px;
+  width: 100%;
+  background: white;
+  z-index: 9999;
+}
+
+.gnav__menu{
+  list-style: none;
+  overflow: hidden;
+}
+
+.gnav__menu li{
+  width: 120px;
+  text-align: center;
+  float: left;
+  height: 50px;
+  line-height: 50px;
+}
+
+.gnav__menu li a{
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.gnav__menu__item_end{
+  background-color: orange;
+}
+
 .lp_body {
   font-family: "小塚ゴシック Pro", 游ゴシック, Meiryo, sans-serif;
   line-height: 1.8;
+  margin-top: 80px;
 }
 
 .mainttl{
-  background: url(../img/w_code/head_bg.jpg) no-repeat center center;
   background-size: cover;
 }
 
@@ -26,25 +141,24 @@ body {
 }
 
 .inner{
-  font-size: calc(22*(100vw/750));
-  padding: 2em 0.2em;
-  border: 5px solid #000;
+  border: 6px solid #000;
   border-radius: 20px;
   background: #fff;
-  width: 100%;
+  padding: 2em 0.5em;
+  width: 94%;
   max-width: 700px;
   text-align: center;
   color: #131d34;
+  font-size: 16px;
   margin: 0 auto 2em;
 }
 
-.fadeInUp {
-  -webkit-animation-name: fadeInUp;
-  animation-name: fadeInUp;
-}
+// .fadeInUp {
+//   -webkit-animation-name: fadeInUp;
+//   animation-name: fadeInUp;
+// }
 
 .title1{
-  font-size: 38px;
   font-weight: bold;
   line-height: 1;
   margin: 0;
@@ -54,12 +168,8 @@ body {
   margin: 0 0 1em;
 }
 
-.line1{
-  font-size: calc(34*(100vw/750));
-}
-
 .line2{
-  font-size: calc(36*(100vw/750));
+  line-height: 1.2;
   font-weight: bold;
   background: linear-gradient(transparent 60%, #f9ff10 60%);
   display: inline-block;
@@ -76,10 +186,53 @@ body {
   border-radius: 4px;
   text-decoration: none;
   box-sizing: border-box;
-  // transition: all .25s ease-in-out;
+}
+
+.link1:hover{
+  background-color: #0bd6f5;
 }
 
 .line3{
   text-align: center;
   font-size: 0.6em;
+}
+
+.subttl{
+  display: flex;
+  text-align: center;
+}
+
+.footer{
+  text-align: center;
+  background-color: black;
+  color: white;
+}
+
+h2{
+  font-size: 30px;
+}
+
+.footer_txt1{
+  text-align: center;
+  border-bottom: 1px solid #ffffff;
+  font-size: 26px;
+  font-weight: normal;
+  padding: 0 0 0.2em;
+  margin: 0 0 0.5em;
+}
+
+.footer_txt2{
+  margin: 0 0 10px;
+  text-align: center;
+  display: block;
+}
+
+
+.footer_txt3{
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  text-align: left;
+  display: inline-block;
 }
